@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Company Survey</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Paint Company Survey</h1>
+            <p>Shopkeepers can share their details and select the distemper colors they need.</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <h2>Shopkeeper Details</h2>
+                <input type="text" id="shopkeeper-name" placeholder="Shopkeeper Name" required />
+                <input type="text" id="shop-name" placeholder="Shop Name" required />
+                <input type="tel" id="contact-number" placeholder="Contact Number" required />
+                <textarea id="address" placeholder="Shop Address" rows="3" required></textarea>
+
+                <h2>Choose Distemper Colors</h2>
+                <div class="color-grid">
+                    <!-- Colors will be dynamically added here -->
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+
+            <h2>Summary</h2>
+            <table id="summary-table">
+                <thead>
+                    <tr>
+                        <th>Shopkeeper Name</th>
+                        <th>Shop Name</th>
+                        <th>Contact Number</th>
+                        <th>Address</th>
+                        <th>Selected Colors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Summary data will be added here -->
+                </tbody>
+            </table>
+
+            <h2>Total Color Demand</h2>
+            <table id="color-demand-table">
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Total Demand</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Color demand data will be added here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
